@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Env
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Model weights / data / media
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.mp4
+*.tar
+*.tar.gz
+checkpoints/
+data/
+
+# Logs / outputs
+*.log
+logs/
+results/
+sandbox/
+debug/
+
+# claude-memory-compiler — INVERTED: track memories, ignore framework
+# Source of truth: github.com/CyberChickZ/claude-memory-compiler
+# Re-deploy via: cp -r ../claude-memory-compiler/{hooks,scripts,pyproject.toml,uv.lock,AGENTS.md} .
+
+hooks/
+scripts/
+AGENTS.md
+pyproject.toml
+uv.lock
+reports/
+.claude/
+
+# Track:
+#   CLAUDE.md
+#   paper_notes/             ← Harry's reading annotations (L1)
+#   daily/                   ← auto-captured conversation traces (L3)
+#   knowledge/               ← LLM-compiled concept articles (L4)
+#   docs/research_*.md       ← Harry's synthesis (L2)
+#   experiments/*/           ← experiment code & READMEs
+
+# Paper PDFs — large binary, fetched from arxiv, not in git
+paper_notes/pdfs/
