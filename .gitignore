@@ -15,6 +15,7 @@ venv/
 .vscode/
 .idea/
 .DS_Store
+.obsidian/
 
 # Model weights / data / media
 *.pt
