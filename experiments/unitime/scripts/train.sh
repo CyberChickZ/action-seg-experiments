@@ -50,7 +50,11 @@ GRAD_ACCUM=1                                            # gradient accumulation 
 NUM_EPOCHS=1  # number of training epochs, 1 for tacos, ego4d and pretrain, 2 for charades, anet, qvhl
 
 LR=2e-4                                                 # learning rate
-MODEL_MAX_LEN=32768                                      # maximum input length of the model
+# MODEL_MAX_LEN: paper/upstream uses 32768, but on a 40GB MIG slice that
+# blows up the attention cache. GTEA mr_seg sequence is ~256 video tokens
+# + 6 (query, answer) pairs ≈ 1500 tokens; 4096 has plenty of headroom and
+# cuts attention memory by ~64×. Bump back up if you have a full 80GB H100.
+MODEL_MAX_LEN=4096
 
 torchrun $DISTRIBUTED_ARGS train.py \
     --model_id $MODEL_ID \
