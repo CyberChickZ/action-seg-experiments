@@ -50,11 +50,13 @@ GRAD_ACCUM=1                                            # gradient accumulation 
 NUM_EPOCHS=1  # number of training epochs, 1 for tacos, ego4d and pretrain, 2 for charades, anet, qvhl
 
 LR=2e-4                                                 # learning rate
-# MODEL_MAX_LEN: paper/upstream uses 32768, but on a 40GB MIG slice that
-# blows up the attention cache. GTEA mr_seg sequence is ~256 video tokens
-# + 6 (query, answer) pairs ≈ 1500 tokens; 4096 has plenty of headroom and
-# cuts attention memory by ~64×. Bump back up if you have a full 80GB H100.
-MODEL_MAX_LEN=4096
+# MODEL_MAX_LEN: paper/upstream uses 32768. On a full 80GB H100 (dgxh-2 OnDemand)
+# we have plenty of room. The 4096 cap that ran on 2026-04-08 truncated 16490-token
+# sequences down to 4096 → only the first ~25% of the video features were visible
+# to the LLM, which is why that run "converged" suspiciously fast (loss 3.3→0.1).
+# 24576 fits the longest GTEA sequence with headroom and matches what UniTime paper
+# uses for benchmark training.
+MODEL_MAX_LEN=24576
 
 torchrun $DISTRIBUTED_ARGS train.py \
     --model_id $MODEL_ID \
