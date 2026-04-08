@@ -26,15 +26,15 @@ venv/
 *.mp4
 *.tar
 *.tar.gz
-checkpoints/
-data/
+/checkpoints/
+/data/
 
 # Logs / outputs
 *.log
-logs/
-results/
-sandbox/
-debug/
+/logs/
+/results/
+/sandbox/
+/debug/
 
 # claude-memory-compiler — INVERTED: track memories, ignore framework
 # Source of truth: github.com/CyberChickZ/claude-memory-compiler
@@ -59,10 +59,9 @@ debug/
 # Paper PDFs — large binary, fetched from arxiv, not in git
 paper_notes/pdfs/
 
-# GTEA experiment runtime symlinks (created by `bash run.sh setup` on HPC)
-experiments/unitime/gtea/data/
-experiments/unitime/gtea/feature/
-experiments/unitime/gtea/video/
-experiments/unitime/gtea/Qwen2-VL-7B-Instruct
-experiments/unitime/gtea/checkpoints/
-experiments/unitime/gtea/results/
+# UniTime experiment runtime artifacts (HPC-side, not in git)
+# `feature/` and `video/` are symlinks to Tieqiao's HPC paths.
+experiments/unitime/feature
+experiments/unitime/video
+experiments/unitime/UniTime/checkpoints/
+experiments/unitime/UniTime/results/
