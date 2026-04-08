@@ -40,13 +40,13 @@ debug/
 # Source of truth: github.com/CyberChickZ/claude-memory-compiler
 # Re-deploy via: cp -r ../claude-memory-compiler/{hooks,scripts,pyproject.toml,uv.lock,AGENTS.md} .
 
-hooks/
-scripts/
-AGENTS.md
-pyproject.toml
-uv.lock
-reports/
-.claude/
+/hooks/
+/scripts/
+/AGENTS.md
+/pyproject.toml
+/uv.lock
+/reports/
+/.claude/
 
 # Track:
 #   CLAUDE.md
