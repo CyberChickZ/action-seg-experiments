@@ -22,9 +22,11 @@ experiments/unitime/
 │   ├── feature.sh         # 一般不用 (features 已预提取)
 │   └── inference_smoke.sh # 按上游 README Quick Start 验证 Qwen base + LoRA 加载
 ├── data/
-│   └── gtea/annot/
-│       ├── train.json     # 21 train videos, 162 entries (committed, ~74KB)
-│       └── test.json      #  7 test videos,  54 entries (committed, ~24KB)
+│   └── gtea/
+│       ├── gtea_csv_to_json.py # ⭐ 学长原版 (4/6/gtea_gtea_csv_to_json.py) 的 sync, MS-TCN GT csv → mr_seg JSON
+│       └── annot/
+│           ├── train.json # 21 train videos, 162 entries (committed, ~74KB)
+│           └── test.json  #  7 test videos,  54 entries (committed, ~24KB)
 ├── feature/               # gitignored, HPC 上 symlink 到学长 features
 └── video/                 # gitignored, HPC 上 symlink 到 raw videos
 ```
@@ -44,7 +46,7 @@ Split1: 21 train videos (S2-S4), 7 test videos (S1).
 
 ## Annotation format
 
-Tieqiao 用 [`gtea_csv_to_json.py`](https://github.com/CyberChickZ/action-seg-experiments/tree/master) (在他 4/6/ dir, 我们没 sync) 把 MS-TCN GT csv 转成 UniTime `mr_seg` JSON. 每个 (video, action_class) 一条 entry, `window` 是该 action 在 video 内出现的所有区间:
+Tieqiao 用 [`data/gtea/gtea_csv_to_json.py`](./data/gtea/gtea_csv_to_json.py) (sync 自他 4/6/ dir 的 `gtea_gtea_csv_to_json.py`) 把 MS-TCN GT csv 转成 UniTime `mr_seg` JSON. 每个 (video, action_class) 一条 entry, `window` 是该 action 在 video 内出现的所有区间:
 
 ```json
 {
@@ -89,19 +91,30 @@ bash ../scripts/inference_smoke.sh
 
 跑通 → `results/smoke/results.json` 里 prediction 在 `[24.x, 30.x]` 附近. 这一步**只**验证 Qwen base + zeqianli/UniTime LoRA adapter 装载正确, 跟 GTEA 没关系.
 
-### 2. Training (GTEA)
+### 2. Training (GTEA) — **必须用 srun!**
+
+⚠️ **绝对不能直接 `bash ../scripts/train.sh`**. 你 ssh 直连 dgxh-1 后默认拿到的 device 0 是个 **MIG 4g.40gb 切片** (40 GB), 还跟别人共享 (一般已经被吃了 36 GB), 直接跑必 OOM:
+```
+GPU 0 has a total capacity of 39.50 GiB; Process X has 36.62 GiB memory in use
+```
+
+正确做法 — 用 SLURM srun 申请独占 GPU:
 
 ```bash
 # 还在 UniTime/ cwd
-bash ../scripts/train.sh
+srun -p dgxh --gres=gpu:1 --cpus-per-task=8 --mem=80G --time=4:00:00 \
+    bash ../scripts/train.sh
 ```
+
+或者先 `srun --pty bash` 拿一个交互 shell, 在 shell 里手动 `bash ../scripts/train.sh`.
 
 输出: `checkpoints/run1/`, tensorboard log 同目录.
 
-### 3. Evaluation
+### 3. Evaluation — 同样用 srun
 
 ```bash
-bash ../scripts/eval.sh
+srun -p dgxh --gres=gpu:1 --cpus-per-task=8 --mem=80G --time=2:00:00 \
+    bash ../scripts/eval.sh
 ```
 
 输出: `results/run1/results.json`.
