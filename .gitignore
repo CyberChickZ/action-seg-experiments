@@ -58,3 +58,11 @@ reports/
 
 # Paper PDFs — large binary, fetched from arxiv, not in git
 paper_notes/pdfs/
+
+# GTEA experiment runtime symlinks (created by `bash run.sh setup` on HPC)
+experiments/unitime/gtea/data/
+experiments/unitime/gtea/feature/
+experiments/unitime/gtea/video/
+experiments/unitime/gtea/Qwen2-VL-7B-Instruct
+experiments/unitime/gtea/checkpoints/
+experiments/unitime/gtea/results/
