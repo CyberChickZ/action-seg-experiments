@@ -1,0 +1,4888 @@
+[
+  {
+    "qid": 0,
+    "id": "S2_Cheese_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            0.6
+          ],
+          [
+            4.333,
+            4.667
+          ],
+          [
+            7.0,
+            7.267
+          ],
+          [
+            15.8,
+            16.733
+          ],
+          [
+            22.0,
+            22.067
+          ],
+          [
+            29.533,
+            29.533
+          ],
+          [
+            31.667,
+            32.067
+          ],
+          [
+            35.267,
+            35.533
+          ],
+          [
+            38.667,
+            42.2
+          ]
+        ]
+      }
+    ],
+    "duration": 42.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 1,
+    "id": "S2_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            22.133,
+            22.933
+          ],
+          [
+            29.6,
+            30.533
+          ]
+        ]
+      }
+    ],
+    "duration": 42.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 2,
+    "id": "S2_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            7.333,
+            11.267
+          ],
+          [
+            14.467,
+            15.733
+          ],
+          [
+            24.8,
+            26.533
+          ]
+        ]
+      }
+    ],
+    "duration": 42.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 3,
+    "id": "S2_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            16.8,
+            21.933
+          ],
+          [
+            26.6,
+            29.467
+          ]
+        ]
+      }
+    ],
+    "duration": 42.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 4,
+    "id": "S2_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            11.333,
+            13.067
+          ],
+          [
+            23.0,
+            24.0
+          ],
+          [
+            30.6,
+            31.6
+          ],
+          [
+            35.6,
+            38.6
+          ]
+        ]
+      }
+    ],
+    "duration": 42.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 5,
+    "id": "S2_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            0.667,
+            4.267
+          ],
+          [
+            4.733,
+            6.933
+          ],
+          [
+            13.133,
+            14.4
+          ],
+          [
+            24.067,
+            24.733
+          ],
+          [
+            32.133,
+            35.2
+          ]
+        ]
+      }
+    ],
+    "duration": 42.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 6,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            0.4
+          ],
+          [
+            2.6,
+            3.133
+          ],
+          [
+            4.467,
+            4.533
+          ],
+          [
+            8.133,
+            8.667
+          ],
+          [
+            10.067,
+            11.8
+          ],
+          [
+            15.2,
+            15.2
+          ],
+          [
+            16.0,
+            17.067
+          ],
+          [
+            19.933,
+            20.133
+          ],
+          [
+            21.4,
+            21.533
+          ],
+          [
+            23.0,
+            23.267
+          ],
+          [
+            34.667,
+            34.8
+          ],
+          [
+            36.667,
+            36.733
+          ],
+          [
+            40.867,
+            41.333
+          ],
+          [
+            44.8,
+            45.133
+          ],
+          [
+            46.867,
+            47.4
+          ],
+          [
+            53.467,
+            54.8
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 7,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            17.133,
+            18.533
+          ],
+          [
+            34.867,
+            35.467
+          ],
+          [
+            45.2,
+            45.933
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 8,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            8.733,
+            10.0
+          ],
+          [
+            21.6,
+            22.933
+          ],
+          [
+            37.867,
+            40.8
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 9,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            13.267,
+            14.067
+          ],
+          [
+            15.267,
+            15.933
+          ],
+          [
+            23.333,
+            34.6
+          ],
+          [
+            41.4,
+            44.733
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 10,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            18.6,
+            19.867
+          ],
+          [
+            35.533,
+            36.6
+          ],
+          [
+            46.0,
+            46.8
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 11,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            11.867,
+            13.2
+          ],
+          [
+            14.133,
+            15.133
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 12,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            47.467,
+            53.4
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 13,
+    "id": "S2_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            0.467,
+            2.533
+          ],
+          [
+            3.2,
+            4.4
+          ],
+          [
+            4.6,
+            8.067
+          ],
+          [
+            20.2,
+            21.333
+          ],
+          [
+            36.8,
+            37.8
+          ]
+        ]
+      }
+    ],
+    "duration": 54.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 14,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.467
+          ],
+          [
+            5.067,
+            6.067
+          ],
+          [
+            8.667,
+            9.467
+          ],
+          [
+            14.933,
+            15.733
+          ],
+          [
+            19.0,
+            20.533
+          ],
+          [
+            26.4,
+            26.4
+          ],
+          [
+            27.867,
+            28.2
+          ],
+          [
+            31.0,
+            31.333
+          ],
+          [
+            38.267,
+            40.733
+          ],
+          [
+            47.267,
+            49.067
+          ],
+          [
+            62.667,
+            63.2
+          ],
+          [
+            66.467,
+            66.6
+          ],
+          [
+            69.4,
+            70.467
+          ],
+          [
+            84.133,
+            90.4
+          ],
+          [
+            94.267,
+            96.267
+          ],
+          [
+            100.333,
+            101.867
+          ],
+          [
+            106.733,
+            107.667
+          ],
+          [
+            112.133,
+            112.933
+          ],
+          [
+            119.0,
+            120.867
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 15,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            31.4,
+            35.933
+          ],
+          [
+            63.267,
+            64.867
+          ],
+          [
+            107.733,
+            109.667
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 16,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            15.8,
+            18.933
+          ],
+          [
+            44.0,
+            47.2
+          ],
+          [
+            70.533,
+            84.067
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 17,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            26.467,
+            27.8
+          ],
+          [
+            29.333,
+            30.933
+          ],
+          [
+            49.133,
+            62.6
+          ],
+          [
+            92.8,
+            94.2
+          ],
+          [
+            98.867,
+            100.267
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 18,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            36.0,
+            38.2
+          ],
+          [
+            64.933,
+            66.4
+          ],
+          [
+            109.733,
+            112.067
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 19,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            20.6,
+            26.333
+          ],
+          [
+            28.267,
+            29.267
+          ],
+          [
+            90.467,
+            92.733
+          ],
+          [
+            96.333,
+            98.8
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 20,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            101.933,
+            106.667
+          ],
+          [
+            113.0,
+            118.933
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 21,
+    "id": "S2_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.533,
+            5.0
+          ],
+          [
+            6.133,
+            8.6
+          ],
+          [
+            9.533,
+            14.867
+          ],
+          [
+            40.8,
+            43.933
+          ],
+          [
+            66.667,
+            69.333
+          ]
+        ]
+      }
+    ],
+    "duration": 120.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 22,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            0.933
+          ],
+          [
+            3.8,
+            6.067
+          ],
+          [
+            13.8,
+            17.2
+          ],
+          [
+            18.867,
+            19.067
+          ],
+          [
+            21.533,
+            21.667
+          ],
+          [
+            27.133,
+            27.133
+          ],
+          [
+            30.933,
+            30.933
+          ],
+          [
+            32.6,
+            35.467
+          ],
+          [
+            42.533,
+            42.6
+          ],
+          [
+            44.6,
+            44.933
+          ],
+          [
+            48.533,
+            54.0
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 23,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            27.2,
+            29.6
+          ],
+          [
+            40.733,
+            42.467
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 24,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person folds or wraps food items together.",
+        "window": [
+          [
+            45.0,
+            48.467
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 25,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            19.133,
+            21.467
+          ],
+          [
+            35.533,
+            36.933
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 26,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            21.733,
+            27.067
+          ],
+          [
+            37.0,
+            40.667
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 27,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            12.467,
+            13.733
+          ],
+          [
+            29.667,
+            30.867
+          ],
+          [
+            42.667,
+            44.533
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 28,
+    "id": "S2_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.0,
+            3.733
+          ],
+          [
+            6.133,
+            12.4
+          ],
+          [
+            17.267,
+            18.8
+          ],
+          [
+            31.0,
+            32.533
+          ]
+        ]
+      }
+    ],
+    "duration": 54.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 29,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.133
+          ],
+          [
+            6.4,
+            6.667
+          ],
+          [
+            11.6,
+            11.933
+          ],
+          [
+            13.667,
+            14.2
+          ],
+          [
+            15.467,
+            17.267
+          ],
+          [
+            19.333,
+            22.133
+          ],
+          [
+            23.933,
+            24.067
+          ],
+          [
+            25.133,
+            27.867
+          ],
+          [
+            36.0,
+            36.0
+          ],
+          [
+            37.2,
+            37.2
+          ],
+          [
+            39.8,
+            41.533
+          ],
+          [
+            43.533,
+            44.467
+          ],
+          [
+            48.467,
+            49.733
+          ],
+          [
+            56.133,
+            56.933
+          ],
+          [
+            58.6,
+            59.733
+          ],
+          [
+            61.533,
+            61.733
+          ],
+          [
+            65.067,
+            65.533
+          ],
+          [
+            67.733,
+            68.133
+          ],
+          [
+            72.6,
+            73.267
+          ],
+          [
+            77.333,
+            78.667
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 30,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            22.2,
+            23.867
+          ],
+          [
+            44.533,
+            47.6
+          ],
+          [
+            65.6,
+            66.4
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 31,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            14.267,
+            15.4
+          ],
+          [
+            37.267,
+            39.733
+          ],
+          [
+            59.8,
+            61.467
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 32,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            61.8,
+            65.0
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 33,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            24.133,
+            25.067
+          ],
+          [
+            47.667,
+            48.4
+          ],
+          [
+            66.467,
+            67.667
+          ],
+          [
+            73.333,
+            77.267
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 34,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            17.333,
+            19.267
+          ],
+          [
+            41.6,
+            43.467
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 35,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person spreads a substance onto bread or a surface with a knife.",
+        "window": [
+          [
+            27.933,
+            35.933
+          ],
+          [
+            49.8,
+            56.067
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 36,
+    "id": "S2_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.2,
+            6.333
+          ],
+          [
+            6.733,
+            11.533
+          ],
+          [
+            12.0,
+            13.6
+          ],
+          [
+            36.067,
+            37.133
+          ],
+          [
+            57.0,
+            58.533
+          ],
+          [
+            68.2,
+            72.533
+          ]
+        ]
+      }
+    ],
+    "duration": 78.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 37,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.067
+          ],
+          [
+            3.733,
+            3.8
+          ],
+          [
+            11.4,
+            12.2
+          ],
+          [
+            14.733,
+            15.267
+          ],
+          [
+            20.0,
+            22.533
+          ],
+          [
+            26.333,
+            26.533
+          ],
+          [
+            35.333,
+            35.533
+          ],
+          [
+            50.333,
+            52.133
+          ],
+          [
+            62.533,
+            62.667
+          ],
+          [
+            64.133,
+            67.2
+          ],
+          [
+            69.867,
+            73.333
+          ],
+          [
+            80.467,
+            82.4
+          ],
+          [
+            84.8,
+            84.8
+          ],
+          [
+            90.667,
+            97.6
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 38,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            52.2,
+            60.933
+          ],
+          [
+            82.467,
+            83.867
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 39,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            15.333,
+            19.933
+          ],
+          [
+            67.267,
+            69.8
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 40,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            73.4,
+            80.4
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 41,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            61.0,
+            62.467
+          ],
+          [
+            83.933,
+            84.733
+          ],
+          [
+            87.267,
+            90.6
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 42,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            22.6,
+            26.267
+          ],
+          [
+            35.6,
+            39.467
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 43,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person spreads a substance onto bread or a surface with a knife.",
+        "window": [
+          [
+            26.6,
+            35.267
+          ],
+          [
+            39.533,
+            50.267
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 44,
+    "id": "S2_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.133,
+            3.667
+          ],
+          [
+            3.867,
+            11.333
+          ],
+          [
+            12.267,
+            14.667
+          ],
+          [
+            62.733,
+            64.067
+          ],
+          [
+            84.867,
+            87.2
+          ]
+        ]
+      }
+    ],
+    "duration": 97.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 45,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.067
+          ],
+          [
+            3.133,
+            4.667
+          ],
+          [
+            6.6,
+            6.733
+          ],
+          [
+            8.4,
+            9.667
+          ],
+          [
+            25.6,
+            26.067
+          ],
+          [
+            28.867,
+            29.2
+          ],
+          [
+            30.8,
+            35.133
+          ],
+          [
+            36.4,
+            36.667
+          ],
+          [
+            43.4,
+            45.867
+          ],
+          [
+            58.533,
+            60.067
+          ],
+          [
+            61.8,
+            61.933
+          ],
+          [
+            64.067,
+            64.6
+          ],
+          [
+            68.4,
+            70.533
+          ],
+          [
+            72.933,
+            73.067
+          ],
+          [
+            74.533,
+            74.533
+          ],
+          [
+            77.733,
+            78.4
+          ],
+          [
+            82.733,
+            83.267
+          ],
+          [
+            91.667,
+            94.067
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 46,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            26.133,
+            27.4
+          ],
+          [
+            78.467,
+            80.533
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 47,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            6.8,
+            8.333
+          ],
+          [
+            36.733,
+            43.333
+          ],
+          [
+            62.0,
+            64.0
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 48,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            9.733,
+            25.533
+          ],
+          [
+            73.133,
+            74.467
+          ],
+          [
+            76.8,
+            77.667
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 49,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            27.467,
+            28.8
+          ],
+          [
+            35.2,
+            36.333
+          ],
+          [
+            80.6,
+            82.667
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 50,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            70.6,
+            72.867
+          ],
+          [
+            74.6,
+            76.733
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 51,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person shakes a container to mix its contents.",
+        "window": [
+          [
+            45.933,
+            58.467
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 52,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            83.333,
+            91.6
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 53,
+    "id": "S2_Tea_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.133,
+            3.067
+          ],
+          [
+            4.733,
+            6.533
+          ],
+          [
+            29.267,
+            30.733
+          ],
+          [
+            60.133,
+            61.733
+          ],
+          [
+            64.667,
+            68.333
+          ]
+        ]
+      }
+    ],
+    "duration": 94.067,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 54,
+    "id": "S3_Cheese_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.2
+          ],
+          [
+            4.4,
+            5.533
+          ],
+          [
+            8.0,
+            8.133
+          ],
+          [
+            16.467,
+            16.667
+          ],
+          [
+            18.4,
+            20.933
+          ],
+          [
+            25.0,
+            26.067
+          ],
+          [
+            33.467,
+            34.0
+          ],
+          [
+            38.067,
+            38.067
+          ],
+          [
+            39.733,
+            41.467
+          ],
+          [
+            50.4,
+            50.667
+          ],
+          [
+            53.733,
+            54.0
+          ],
+          [
+            55.733,
+            60.8
+          ]
+        ]
+      }
+    ],
+    "duration": 60.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 55,
+    "id": "S3_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            34.067,
+            35.4
+          ],
+          [
+            48.067,
+            49.267
+          ]
+        ]
+      }
+    ],
+    "duration": 60.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 56,
+    "id": "S3_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            8.2,
+            16.4
+          ],
+          [
+            23.0,
+            24.933
+          ],
+          [
+            38.133,
+            39.667
+          ]
+        ]
+      }
+    ],
+    "duration": 60.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 57,
+    "id": "S3_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            26.133,
+            33.4
+          ],
+          [
+            41.533,
+            48.0
+          ]
+        ]
+      }
+    ],
+    "duration": 60.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 58,
+    "id": "S3_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            16.733,
+            18.333
+          ],
+          [
+            35.467,
+            36.8
+          ],
+          [
+            49.333,
+            50.333
+          ],
+          [
+            54.067,
+            55.667
+          ]
+        ]
+      }
+    ],
+    "duration": 60.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 59,
+    "id": "S3_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.267,
+            4.333
+          ],
+          [
+            5.6,
+            7.933
+          ],
+          [
+            21.0,
+            22.933
+          ],
+          [
+            36.867,
+            38.0
+          ],
+          [
+            50.733,
+            53.667
+          ]
+        ]
+      }
+    ],
+    "duration": 60.8,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 60,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.267
+          ],
+          [
+            3.533,
+            3.933
+          ],
+          [
+            9.6,
+            12.267
+          ],
+          [
+            15.267,
+            15.6
+          ],
+          [
+            18.667,
+            19.8
+          ],
+          [
+            23.6,
+            23.6
+          ],
+          [
+            25.6,
+            25.867
+          ],
+          [
+            27.8,
+            28.867
+          ],
+          [
+            36.6,
+            36.8
+          ],
+          [
+            39.067,
+            39.4
+          ],
+          [
+            41.0,
+            41.4
+          ],
+          [
+            43.133,
+            43.8
+          ],
+          [
+            51.733,
+            53.133
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 61,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            19.867,
+            22.8
+          ],
+          [
+            36.867,
+            37.733
+          ],
+          [
+            49.133,
+            50.4
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 62,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            7.533,
+            9.533
+          ],
+          [
+            25.933,
+            27.733
+          ],
+          [
+            41.467,
+            43.067
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 63,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            14.667,
+            15.2
+          ],
+          [
+            17.533,
+            18.6
+          ],
+          [
+            28.933,
+            36.533
+          ],
+          [
+            43.867,
+            49.067
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 64,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            22.867,
+            23.533
+          ],
+          [
+            37.8,
+            39.0
+          ],
+          [
+            50.467,
+            51.667
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 65,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            12.333,
+            14.6
+          ],
+          [
+            15.667,
+            17.467
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 66,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            53.2,
+            59.4
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 67,
+    "id": "S3_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.333,
+            3.467
+          ],
+          [
+            4.0,
+            7.467
+          ],
+          [
+            23.667,
+            25.533
+          ],
+          [
+            39.467,
+            40.933
+          ]
+        ]
+      }
+    ],
+    "duration": 59.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 68,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.267
+          ],
+          [
+            6.733,
+            7.667
+          ],
+          [
+            9.333,
+            9.533
+          ],
+          [
+            11.333,
+            11.933
+          ],
+          [
+            15.267,
+            15.333
+          ],
+          [
+            18.4,
+            18.667
+          ],
+          [
+            21.4,
+            22.8
+          ],
+          [
+            28.0,
+            29.267
+          ],
+          [
+            31.6,
+            33.067
+          ],
+          [
+            36.4,
+            38.0
+          ],
+          [
+            40.867,
+            41.067
+          ],
+          [
+            43.2,
+            45.067
+          ],
+          [
+            49.133,
+            49.4
+          ],
+          [
+            50.867,
+            51.2
+          ],
+          [
+            53.0,
+            53.733
+          ],
+          [
+            67.6,
+            68.0
+          ],
+          [
+            70.6,
+            72.133
+          ],
+          [
+            72.6,
+            79.267
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 69,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            22.867,
+            26.133
+          ],
+          [
+            45.133,
+            47.333
+          ],
+          [
+            68.067,
+            69.067
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 70,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            9.6,
+            11.267
+          ],
+          [
+            33.133,
+            36.333
+          ],
+          [
+            51.267,
+            52.933
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 71,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            17.8,
+            18.333
+          ],
+          [
+            20.4,
+            21.333
+          ],
+          [
+            40.133,
+            40.8
+          ],
+          [
+            42.6,
+            43.133
+          ],
+          [
+            53.8,
+            67.533
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 72,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            26.2,
+            27.933
+          ],
+          [
+            47.4,
+            49.067
+          ],
+          [
+            69.133,
+            70.533
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 73,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            15.4,
+            17.733
+          ],
+          [
+            18.733,
+            20.333
+          ],
+          [
+            38.067,
+            40.067
+          ],
+          [
+            41.133,
+            42.533
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 74,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            72.2,
+            72.533
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 75,
+    "id": "S3_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.333,
+            6.667
+          ],
+          [
+            7.733,
+            9.267
+          ],
+          [
+            12.0,
+            15.2
+          ],
+          [
+            29.333,
+            31.533
+          ],
+          [
+            49.467,
+            50.8
+          ]
+        ]
+      }
+    ],
+    "duration": 79.267,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 76,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.267
+          ],
+          [
+            3.867,
+            5.0
+          ],
+          [
+            16.067,
+            16.333
+          ],
+          [
+            31.667,
+            31.667
+          ],
+          [
+            37.733,
+            38.533
+          ],
+          [
+            50.667,
+            51.467
+          ],
+          [
+            55.467,
+            57.4
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 77,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            31.733,
+            32.733
+          ],
+          [
+            47.4,
+            49.133
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 78,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person folds or wraps food items together.",
+        "window": [
+          [
+            51.533,
+            55.4
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 79,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            14.067,
+            16.0
+          ],
+          [
+            35.533,
+            37.667
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 80,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            16.4,
+            31.6
+          ],
+          [
+            38.6,
+            47.333
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 81,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            9.933,
+            12.067
+          ],
+          [
+            32.8,
+            33.8
+          ],
+          [
+            49.2,
+            50.6
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 82,
+    "id": "S3_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.333,
+            3.8
+          ],
+          [
+            5.067,
+            9.867
+          ],
+          [
+            12.133,
+            14.0
+          ],
+          [
+            33.867,
+            35.467
+          ]
+        ]
+      }
+    ],
+    "duration": 57.4,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 83,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.067
+          ],
+          [
+            5.133,
+            5.467
+          ],
+          [
+            9.133,
+            9.333
+          ],
+          [
+            12.333,
+            13.333
+          ],
+          [
+            16.867,
+            18.467
+          ],
+          [
+            24.6,
+            25.467
+          ],
+          [
+            32.067,
+            34.467
+          ],
+          [
+            37.2,
+            38.533
+          ],
+          [
+            48.333,
+            49.267
+          ],
+          [
+            55.6,
+            55.667
+          ],
+          [
+            58.733,
+            59.8
+          ],
+          [
+            63.067,
+            63.6
+          ],
+          [
+            66.4,
+            66.6
+          ],
+          [
+            74.267,
+            77.867
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 84,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            25.533,
+            27.6
+          ],
+          [
+            49.333,
+            53.4
+          ],
+          [
+            63.667,
+            65.0
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 85,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            7.2,
+            9.067
+          ],
+          [
+            29.733,
+            32.0
+          ],
+          [
+            55.733,
+            58.667
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 86,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            59.867,
+            63.0
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 87,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            27.667,
+            28.4
+          ],
+          [
+            53.467,
+            54.2
+          ],
+          [
+            65.067,
+            66.333
+          ],
+          [
+            69.933,
+            74.2
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 88,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            13.4,
+            16.8
+          ],
+          [
+            34.533,
+            37.133
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 89,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person spreads a substance onto bread or a surface with a knife.",
+        "window": [
+          [
+            18.533,
+            24.533
+          ],
+          [
+            38.6,
+            48.267
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 90,
+    "id": "S3_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.133,
+            5.067
+          ],
+          [
+            5.533,
+            7.133
+          ],
+          [
+            9.4,
+            12.267
+          ],
+          [
+            28.467,
+            29.667
+          ],
+          [
+            54.267,
+            55.533
+          ],
+          [
+            66.667,
+            69.867
+          ]
+        ]
+      }
+    ],
+    "duration": 77.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 91,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.333
+          ],
+          [
+            4.2,
+            4.267
+          ],
+          [
+            9.467,
+            9.8
+          ],
+          [
+            12.933,
+            12.933
+          ],
+          [
+            15.6,
+            16.2
+          ],
+          [
+            25.667,
+            27.4
+          ],
+          [
+            32.333,
+            34.867
+          ],
+          [
+            36.467,
+            36.867
+          ],
+          [
+            39.733,
+            45.733
+          ],
+          [
+            50.267,
+            51.267
+          ],
+          [
+            54.533,
+            55.133
+          ],
+          [
+            61.267,
+            64.2
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 92,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            27.467,
+            31.0
+          ],
+          [
+            51.333,
+            52.6
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 93,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            6.133,
+            9.4
+          ],
+          [
+            36.933,
+            39.667
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 94,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            45.8,
+            50.2
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 95,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            31.067,
+            32.267
+          ],
+          [
+            52.667,
+            54.467
+          ],
+          [
+            58.667,
+            61.2
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 96,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            13.0,
+            15.533
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 97,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person spreads a substance onto bread or a surface with a knife.",
+        "window": [
+          [
+            16.267,
+            25.6
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 98,
+    "id": "S3_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.4,
+            4.133
+          ],
+          [
+            4.333,
+            6.067
+          ],
+          [
+            9.867,
+            12.867
+          ],
+          [
+            34.933,
+            36.4
+          ],
+          [
+            55.2,
+            58.6
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 99,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.267
+          ],
+          [
+            4.2,
+            4.2
+          ],
+          [
+            7.667,
+            8.133
+          ],
+          [
+            21.067,
+            21.8
+          ],
+          [
+            26.267,
+            26.667
+          ],
+          [
+            32.667,
+            34.333
+          ],
+          [
+            51.067,
+            55.867
+          ],
+          [
+            57.8,
+            57.867
+          ],
+          [
+            62.333,
+            62.933
+          ],
+          [
+            68.533,
+            69.067
+          ],
+          [
+            72.133,
+            72.4
+          ],
+          [
+            74.533,
+            76.533
+          ],
+          [
+            81.267,
+            84.6
+          ],
+          [
+            90.6,
+            90.667
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 100,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            18.8,
+            19.6
+          ],
+          [
+            76.6,
+            79.533
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 101,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            5.733,
+            7.6
+          ],
+          [
+            26.733,
+            32.6
+          ],
+          [
+            57.933,
+            62.267
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 102,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            8.2,
+            18.733
+          ],
+          [
+            71.2,
+            72.067
+          ],
+          [
+            74.0,
+            74.467
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 103,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            19.667,
+            21.0
+          ],
+          [
+            79.6,
+            81.2
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 104,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            69.133,
+            71.133
+          ],
+          [
+            72.467,
+            73.933
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 105,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person shakes a container to mix its contents.",
+        "window": [
+          [
+            34.4,
+            51.0
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 106,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            84.667,
+            90.533
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 107,
+    "id": "S3_Tea_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.333,
+            4.133
+          ],
+          [
+            4.267,
+            5.667
+          ],
+          [
+            21.867,
+            26.2
+          ],
+          [
+            55.933,
+            57.733
+          ],
+          [
+            63.0,
+            68.467
+          ]
+        ]
+      }
+    ],
+    "duration": 90.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 108,
+    "id": "S4_Cheese_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.267
+          ],
+          [
+            4.867,
+            5.467
+          ],
+          [
+            7.2,
+            7.2
+          ],
+          [
+            18.867,
+            19.867
+          ],
+          [
+            21.533,
+            21.667
+          ],
+          [
+            28.933,
+            28.933
+          ],
+          [
+            33.667,
+            34.6
+          ],
+          [
+            37.0,
+            37.067
+          ],
+          [
+            40.4,
+            40.667
+          ],
+          [
+            43.533,
+            43.667
+          ],
+          [
+            45.6,
+            45.667
+          ],
+          [
+            49.333,
+            53.6
+          ]
+        ]
+      }
+    ],
+    "duration": 53.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 109,
+    "id": "S4_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            29.0,
+            30.0
+          ],
+          [
+            40.733,
+            41.733
+          ]
+        ]
+      }
+    ],
+    "duration": 53.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 110,
+    "id": "S4_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            7.267,
+            15.733
+          ],
+          [
+            19.933,
+            21.467
+          ],
+          [
+            34.667,
+            36.933
+          ]
+        ]
+      }
+    ],
+    "duration": 53.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 111,
+    "id": "S4_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            21.733,
+            28.867
+          ],
+          [
+            37.133,
+            40.333
+          ]
+        ]
+      }
+    ],
+    "duration": 53.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 112,
+    "id": "S4_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            15.8,
+            17.2
+          ],
+          [
+            30.067,
+            31.8
+          ],
+          [
+            41.8,
+            43.467
+          ],
+          [
+            45.733,
+            49.267
+          ]
+        ]
+      }
+    ],
+    "duration": 53.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 113,
+    "id": "S4_Cheese_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.333,
+            4.8
+          ],
+          [
+            5.533,
+            7.133
+          ],
+          [
+            17.267,
+            18.8
+          ],
+          [
+            31.867,
+            33.6
+          ],
+          [
+            43.733,
+            45.533
+          ]
+        ]
+      }
+    ],
+    "duration": 53.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 114,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.133
+          ],
+          [
+            3.933,
+            4.8
+          ],
+          [
+            8.133,
+            8.533
+          ],
+          [
+            11.667,
+            12.667
+          ],
+          [
+            14.467,
+            14.533
+          ],
+          [
+            15.2,
+            15.4
+          ],
+          [
+            17.533,
+            18.067
+          ],
+          [
+            22.067,
+            22.267
+          ],
+          [
+            24.4,
+            24.6
+          ],
+          [
+            26.133,
+            27.467
+          ],
+          [
+            34.933,
+            35.933
+          ],
+          [
+            37.733,
+            37.867
+          ],
+          [
+            39.067,
+            39.2
+          ],
+          [
+            42.0,
+            42.867
+          ],
+          [
+            48.4,
+            49.333
+          ],
+          [
+            51.467,
+            51.933
+          ],
+          [
+            58.0,
+            58.0
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 115,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            18.133,
+            21.0
+          ],
+          [
+            36.0,
+            36.6
+          ],
+          [
+            49.4,
+            50.4
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 116,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            9.467,
+            11.6
+          ],
+          [
+            24.667,
+            26.067
+          ],
+          [
+            39.267,
+            41.933
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 117,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            14.6,
+            15.133
+          ],
+          [
+            17.0,
+            17.467
+          ],
+          [
+            27.533,
+            34.867
+          ],
+          [
+            42.933,
+            48.333
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 118,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            21.067,
+            22.0
+          ],
+          [
+            36.667,
+            37.667
+          ],
+          [
+            50.467,
+            51.4
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 119,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            12.733,
+            14.4
+          ],
+          [
+            15.467,
+            16.933
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 120,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            52.0,
+            57.933
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 121,
+    "id": "S4_CofHoney_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.2,
+            3.867
+          ],
+          [
+            4.867,
+            8.067
+          ],
+          [
+            8.6,
+            9.4
+          ],
+          [
+            22.333,
+            24.333
+          ],
+          [
+            37.933,
+            39.0
+          ]
+        ]
+      }
+    ],
+    "duration": 58.0,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 122,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            0.867
+          ],
+          [
+            3.333,
+            5.067
+          ],
+          [
+            6.667,
+            7.467
+          ],
+          [
+            11.8,
+            13.0
+          ],
+          [
+            16.733,
+            16.933
+          ],
+          [
+            18.933,
+            20.6
+          ],
+          [
+            25.133,
+            25.267
+          ],
+          [
+            31.133,
+            32.933
+          ],
+          [
+            35.0,
+            35.8
+          ],
+          [
+            41.067,
+            41.267
+          ],
+          [
+            43.133,
+            43.867
+          ],
+          [
+            45.533,
+            46.467
+          ],
+          [
+            55.667,
+            56.667
+          ],
+          [
+            58.867,
+            59.4
+          ],
+          [
+            64.2,
+            64.2
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 123,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            20.667,
+            23.867
+          ],
+          [
+            35.867,
+            39.133
+          ],
+          [
+            56.733,
+            57.533
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 124,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            8.8,
+            11.733
+          ],
+          [
+            28.0,
+            31.067
+          ],
+          [
+            43.933,
+            45.467
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 125,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            16.2,
+            16.667
+          ],
+          [
+            18.467,
+            18.867
+          ],
+          [
+            34.6,
+            34.933
+          ],
+          [
+            46.533,
+            55.6
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 126,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            23.933,
+            25.067
+          ],
+          [
+            39.2,
+            41.0
+          ],
+          [
+            57.6,
+            58.8
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 127,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            13.067,
+            16.133
+          ],
+          [
+            17.0,
+            18.4
+          ],
+          [
+            33.0,
+            34.533
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 128,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            59.467,
+            64.133
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 129,
+    "id": "S4_Coffee_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            0.933,
+            3.267
+          ],
+          [
+            5.133,
+            6.6
+          ],
+          [
+            7.533,
+            8.733
+          ],
+          [
+            25.333,
+            27.933
+          ],
+          [
+            41.333,
+            43.067
+          ]
+        ]
+      }
+    ],
+    "duration": 64.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 130,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.4
+          ],
+          [
+            3.6,
+            4.8
+          ],
+          [
+            9.933,
+            11.267
+          ],
+          [
+            13.133,
+            15.0
+          ],
+          [
+            18.8,
+            19.2
+          ],
+          [
+            22.733,
+            23.0
+          ],
+          [
+            25.467,
+            25.467
+          ],
+          [
+            26.4,
+            27.733
+          ],
+          [
+            30.267,
+            30.4
+          ],
+          [
+            34.067,
+            34.067
+          ],
+          [
+            36.8,
+            37.133
+          ],
+          [
+            42.933,
+            43.6
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 131,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            23.067,
+            23.4
+          ],
+          [
+            34.133,
+            35.067
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 132,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person folds or wraps food items together.",
+        "window": [
+          [
+            37.2,
+            42.867
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 133,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            15.067,
+            18.733
+          ],
+          [
+            27.8,
+            30.2
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 134,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            19.267,
+            22.667
+          ],
+          [
+            30.467,
+            34.0
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 135,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            8.533,
+            9.867
+          ],
+          [
+            23.467,
+            25.4
+          ],
+          [
+            35.133,
+            36.733
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 136,
+    "id": "S4_Hotdog_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.467,
+            3.533
+          ],
+          [
+            4.867,
+            8.467
+          ],
+          [
+            11.333,
+            13.067
+          ],
+          [
+            25.533,
+            26.333
+          ]
+        ]
+      }
+    ],
+    "duration": 43.6,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 137,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            0.933
+          ],
+          [
+            4.0,
+            5.467
+          ],
+          [
+            8.067,
+            9.867
+          ],
+          [
+            11.733,
+            13.267
+          ],
+          [
+            18.067,
+            18.133
+          ],
+          [
+            20.0,
+            22.2
+          ],
+          [
+            23.8,
+            23.867
+          ],
+          [
+            29.0,
+            30.933
+          ],
+          [
+            34.667,
+            34.733
+          ],
+          [
+            37.933,
+            39.133
+          ],
+          [
+            52.933,
+            53.733
+          ],
+          [
+            56.933,
+            57.0
+          ],
+          [
+            58.267,
+            58.6
+          ],
+          [
+            60.2,
+            62.0
+          ],
+          [
+            72.467,
+            72.533
+          ],
+          [
+            74.667,
+            74.733
+          ],
+          [
+            82.667,
+            82.867
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 138,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            31.0,
+            32.667
+          ],
+          [
+            53.8,
+            56.2
+          ],
+          [
+            69.333,
+            70.733
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 139,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            6.933,
+            8.0
+          ],
+          [
+            34.8,
+            37.867
+          ],
+          [
+            58.667,
+            60.133
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 140,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            62.067,
+            69.267
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 141,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            32.733,
+            33.6
+          ],
+          [
+            56.267,
+            56.867
+          ],
+          [
+            70.8,
+            72.4
+          ],
+          [
+            74.8,
+            82.6
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 142,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            13.333,
+            18.0
+          ],
+          [
+            22.267,
+            23.733
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 143,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person spreads a substance onto bread or a surface with a knife.",
+        "window": [
+          [
+            18.2,
+            19.933
+          ],
+          [
+            23.933,
+            28.933
+          ],
+          [
+            39.2,
+            52.867
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 144,
+    "id": "S4_Pealate_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.0,
+            3.933
+          ],
+          [
+            5.533,
+            6.867
+          ],
+          [
+            9.933,
+            11.667
+          ],
+          [
+            33.667,
+            34.6
+          ],
+          [
+            57.067,
+            58.2
+          ],
+          [
+            72.6,
+            74.6
+          ]
+        ]
+      }
+    ],
+    "duration": 82.867,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 145,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            0.667
+          ],
+          [
+            5.267,
+            6.0
+          ],
+          [
+            7.6,
+            7.8
+          ],
+          [
+            10.933,
+            11.733
+          ],
+          [
+            13.533,
+            14.4
+          ],
+          [
+            16.467,
+            17.267
+          ],
+          [
+            20.0,
+            20.4
+          ],
+          [
+            22.8,
+            24.0
+          ],
+          [
+            30.667,
+            32.067
+          ],
+          [
+            35.8,
+            36.0
+          ],
+          [
+            39.667,
+            40.867
+          ],
+          [
+            51.067,
+            51.333
+          ],
+          [
+            54.133,
+            54.133
+          ],
+          [
+            62.2,
+            62.2
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 146,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            32.133,
+            34.867
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 147,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            7.867,
+            10.867
+          ],
+          [
+            37.533,
+            39.6
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 148,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            40.933,
+            48.333
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 149,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            34.933,
+            35.733
+          ],
+          [
+            48.4,
+            51.0
+          ],
+          [
+            54.2,
+            62.133
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 150,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            14.467,
+            16.4
+          ],
+          [
+            20.467,
+            22.733
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 151,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person spreads a substance onto bread or a surface with a knife.",
+        "window": [
+          [
+            17.333,
+            19.933
+          ],
+          [
+            24.067,
+            30.6
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 152,
+    "id": "S4_Peanut_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            0.733,
+            5.2
+          ],
+          [
+            6.067,
+            7.533
+          ],
+          [
+            11.8,
+            13.467
+          ],
+          [
+            36.067,
+            37.467
+          ],
+          [
+            51.4,
+            54.067
+          ]
+        ]
+      }
+    ],
+    "duration": 62.2,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 153,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "No specific cooking action is being performed.",
+        "window": [
+          [
+            0.0,
+            1.133
+          ],
+          [
+            3.667,
+            4.267
+          ],
+          [
+            5.933,
+            6.067
+          ],
+          [
+            7.4,
+            8.467
+          ],
+          [
+            15.4,
+            16.333
+          ],
+          [
+            18.133,
+            18.333
+          ],
+          [
+            20.267,
+            25.267
+          ],
+          [
+            31.2,
+            33.6
+          ],
+          [
+            45.2,
+            47.0
+          ],
+          [
+            49.6,
+            50.067
+          ],
+          [
+            52.467,
+            53.733
+          ],
+          [
+            56.133,
+            57.333
+          ],
+          [
+            59.533,
+            59.6
+          ],
+          [
+            61.533,
+            61.933
+          ],
+          [
+            65.0,
+            65.8
+          ],
+          [
+            69.067,
+            69.933
+          ],
+          [
+            75.133,
+            76.667
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 154,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person closes a container, jar, or package.",
+        "window": [
+          [
+            16.4,
+            17.0
+          ],
+          [
+            65.867,
+            67.667
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 155,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person opens a container, jar, or package.",
+        "window": [
+          [
+            6.133,
+            7.333
+          ],
+          [
+            25.333,
+            31.133
+          ],
+          [
+            53.8,
+            56.067
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 156,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person pours liquid or contents from one container into another.",
+        "window": [
+          [
+            8.533,
+            15.333
+          ],
+          [
+            59.067,
+            59.467
+          ],
+          [
+            61.067,
+            61.467
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 157,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person puts down an object or places an ingredient on the surface.",
+        "window": [
+          [
+            17.067,
+            18.067
+          ],
+          [
+            67.733,
+            69.0
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 158,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person scoops contents out of a container using a spoon or utensil.",
+        "window": [
+          [
+            57.4,
+            59.0
+          ],
+          [
+            59.667,
+            61.0
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 159,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person shakes a container to mix its contents.",
+        "window": [
+          [
+            33.667,
+            45.133
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 160,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person stirs the contents inside a bowl, cup, or pan.",
+        "window": [
+          [
+            62.0,
+            64.933
+          ],
+          [
+            70.0,
+            75.067
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  },
+  {
+    "qid": 161,
+    "id": "S4_Tea_C1",
+    "annos": [
+      {
+        "query": "The person takes an object or ingredient from the workspace.",
+        "window": [
+          [
+            1.2,
+            3.6
+          ],
+          [
+            4.333,
+            5.867
+          ],
+          [
+            18.4,
+            20.2
+          ],
+          [
+            47.067,
+            49.533
+          ],
+          [
+            50.133,
+            52.4
+          ]
+        ]
+      }
+    ],
+    "duration": 76.667,
+    "mode": "mr_seg"
+  }
+]
