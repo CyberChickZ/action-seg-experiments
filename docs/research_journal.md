@@ -89,3 +89,110 @@
 - 训练默认 8×GPU + deepspeed zero2 + bf16 + LoRA r=8, lr 2e-4, model_max_length 32768. 7B 在 8×80GB 跑 zero2 够用.
 - Inference 单卡可跑, 上游自带 sample `data/test.json` (单 video, 单 query), 适合 smoke test.
 - HPC 跑通的全流程写在 [`experiments/unitime/HPC_RUNBOOK.md`](../experiments/unitime/HPC_RUNBOOK.md), 包括 env / HF download / sample inference / train / SLURM 模板 / 6 个常见坑.
+
+## 2026-04-08 — Few-shot / ICL for VLM-based TAS: literature survey
+
+### 1. Few-shot ICL: GVL pattern (ICLR 2025, arXiv:2411.04549)
+- Prepend (shuffled_frames, per-frame value) pairs directly into the VLM prompt as in-context examples, **no fine-tuning**.
+- For TAS adaptation: replace "task completion %" with action class label. Format: `Frame {i}: [frame image]. Label: {action_class}`.
+- Subsample each support video to fixed 30 frames → interleave frames+labels → then show query video frames unlabeled.
+- Key insight: in-context examples need not come from same task/domain (human→robot transfer worked). For GTEA we can use 1-3 support videos per class.
+- **Risk**: 28 GTEA videos × 16490 tokens each is way over context. Need aggressive frame subsampling (≤32 frames/video) for ICL to fit in Gemma 3 / Gemma 4 context window.
+
+### 2. Timestamp representation: Grounded-VideoLLM (arXiv:2410.03290)
+- Discrete temporal tokens `<0>` to `<M>` instead of text floats → avoids tokenizer struggles with decimal numbers.
+- Can be bolted on top of UniTime's timestamp-interleave: replace `"timestamp: 3.5 seconds"` text with a learnable `<t_35>` token.
+- Requires adding M+1 tokens to embedding layer and a Stage 2 temporal token alignment training.
+- Dense video captioning output: `From <0> to <6>, {action}. From <7> to <16>, {action}.` — directly maps to TAS segment format.
+
+### 3. Background class handling
+- Standard trick: treat background as just another action class with its own support examples.
+- BOLT (CVPR 2025) insight: uniform frame sampling allocates budget to background/irrelevant frames, hurting VLM performance. Use **query-guided frame selection** (inverse transform sampling over frame-query similarity scores) to deprioritize background frames during ICL construction.
+- Practical: embed query action text + all frames with CLIP, sample frames proportional to similarity score → support set has fewer background frames.
+
+### 4. Text→frame-label post-processing
+- UniTime already solves this for moment retrieval (timestamp → frame range). For dense TAS:
+  - Option A: Ask model to output `{action}: [start_s, end_s]` segments → fill frame labels deterministically.
+  - Option B: Sliding window (16-32 frames) → per-window class prediction → majority vote over overlapping windows (used in COIN dataset TAS with InternVL3, seen in search results).
+  - Option B is simpler and doesn't require model to learn segment boundary output format.
+
+### 5. Chain-of-thought / prompting tricks
+- Specificity beats generality: "Is the person stirring the egg?" >> "What is happening?". For GTEA: ask per-action-class queries rather than open-ended description.
+- V-STaR decomposition: first "what objects?", then "when does this action occur?", then answer. Can be chained as multi-turn prompt.
+- Stacked temporal attention (arXiv:2510.26027): architectural change in vision encoder — adds temporal self-attention between frames before ViT patches reach LLM. Relevant if we port to a custom Gemma 3 backbone.
+
+### MMF-TAS (ICCV 2025) — most directly relevant paper
+- Prototype Graph Network: build per-action prototype from support video frames via Dynamic Graph Transformer, then match against query video frame-by-frame.
+- Multi-modal: separate visual prototype + text prototype (action name / description), fuse via prediction fusion.
+- **Directly applicable**: we could replace LoRA fine-tuning with PGNet-style prototype matching over Gemma 3 visual features for zero-shot generalization to novel GTEA splits.
+- Code: https://github.com/ZijiaLewisLu/ICCV2025-MMF-TAS (public as of ICCV 2025).
+
+## 2026-04-08 — MLLM-for-TAS gap analysis: bridging 58% → 85%+
+
+### What the 58% baseline tells us
+- Our UniTime+Gemma3 4B @ 2 epochs LoRA = strict timestamp F1 58% vs dedicated TAS (MS-TCN++/ASFormer) F1@10 ~85-92%.
+- Two distinct failure modes: (A) wrong temporal boundary precision (moment retrieval quality), (B) dense assignment errors when tiling per-class windows back to frame labels.
+
+### Actionable ideas ranked by effort/reward
+
+**[Low effort, high reward] 1. Binary 0/1 frame token output (arxiv:2512.12246)**
+- Paper: "Moment and Highlight Detection via MLLM Frame Segmentation" (Dec 2025).
+- Instead of outputting timestamp intervals, finetune the model to emit one binary token (`0`/`1`) per input frame in the LLM output (foreground/background for the queried action).
+- Dense per-frame supervision instead of sparse start/end supervision → directly trains what TAS needs.
+- Loss: standard CE on the binary token sequence alongside causal LM loss.
+- Implementation: change `collators/gemma3_vl.py` target sequence from `"timestamp: X seconds"` format to `"0101101..."` frame mask string, one char per frame; compute label from GT annotation per frame.
+- **Why this helps**: current UniTime gets gradient only on 2 timestamp tokens per segment; this gets gradient on every frame → much stronger signal.
+
+**[Low effort, medium reward] 2. Post-processing with Viterbi / smoothing**
+- UniTime outputs per-action-class interval predictions. After tiling to frame labels, apply standard TAS post-processing:
+  - Truncated MSE smoothing loss at inference (already used in MS-TCN++).
+  - Viterbi with Markov transition matrix estimated from GTEA train splits.
+  - These can be applied on top of current checkpoint without retraining.
+- Expected gain: ~3-5 F1 points from reducing over-segmentation/boundary jitter.
+- Reference: Viterbi decoding for TAS well established (TSTDA 2021, OnlineTAS NeurIPS 2024).
+
+**[Medium effort, high reward] 3. Add dedicated TAS feature backbone**
+- FACT (CVPR 2024): Frame-Action Cross-Attention temporal modeling, gave +4.5% F1@50 on Breakfast over prior SoTA.
+- Plan: extract per-frame visual features from Gemma 3 vision encoder (already have `extract_gemma_features.py`), then feed into FACT or ASFormer temporal decoder instead of UniTime's timestamp retrieval head.
+- This is a hybrid: VLM as feature extractor → specialized TAS decoder. Avoids reformulating LLM output.
+- Key question: are Gemma 3 SigLIP-2 features better than I3D/ResNet for TAS? Likely yes given richer semantic understanding.
+
+**[Medium effort, high reward] 4. Multi-query training with transcript supervision**
+- UniTime's mr_seg mode already batches multiple queries per video (collators/gemma3_vl.py). 
+- Extend: for GTEA we have full transcripts (ordered action sequences). Add a "transcript prediction" training objective: given video, predict the ordered list of `(action, start, end)` tuples in one forward pass.
+- Related: "Unified Fully and Timestamp Supervised TAS via Seq2Seq Translation" (arXiv:2209.00638) used BART; we can do the same with Gemma 3 in instruction-following format.
+- Expected benefit: model learns global sequence structure (breakfast → action A always before B) instead of treating each action query independently.
+
+**[Low effort, medium reward] 5. Scale to Gemma 4 (or larger backbone)**
+- Our Gemma 3 4B result is 58%. UniTime paper uses 7B models. Gemma 4 27B is available.
+- Task 25 (pending): set up UniTime-gemma4 env. If features are better, post-processing gains stack.
+- Note: 4B → 27B alone is unlikely to close the full gap (architecture/training objective matters more), but it's a free win if compute allows.
+
+**[High effort, potentially SOTA] 6. MMF-TAS prototype matching + VLM features**
+- Replace LoRA finetuning with PGNet-style matching (ICCV 2025 MMF-TAS).
+- Build per-action class prototype from support set frames using Gemma 3 visual features.
+- Match query video frames against prototypes → dense frame labels.
+- Advantage: generalizes to novel classes without retraining. Code available at github.com/ZijiaLewisLu/ICCV2025-MMF-TAS.
+
+## 2026-05-03 — UniTime Qwen2-VL `combine_timestamps` 不适配 GTEA 短视频
+
+### 发现
+Qwen2-VL-2B GTEA 训练: train_loss=0.172 (所有模型最低), 但 TAS F1@10=11.0% (接近随机). 对比: Gemma3 4B train_loss=0.337 但 F1@10=63.3%.
+
+### 根因
+UniTime 上游 Qwen2-VL collator (`collators/qwen_vision_process.py:314`, `combine_timestamps()`) 在 `CLIP_LENGTH=32` (上游默认) 下, 把视频帧按 32 帧分组合并, 每组只保留一个 timestamp. GTEA 视频短 (40-80s), feature_offline.py 提取 ~80-160 帧, combine 后只剩 2-5 个 timestamp → 模型只学会预测 0.2s 和 32.x s 两个时间值.
+
+### 为什么只影响 Qwen2-VL
+Gemma3/Gemma4 的 collator 是我们从零写的, 不调 `combine_timestamps`, 直接用 32 个均匀 timestamp. Qwen2-VL 用上游原版 collator 才触发这个路径.
+
+### 为什么上游没发现
+UniTime 论文的 5 个 benchmark (Ego4D-NLQ, TaCoS, Charades-STA, ANet-Captions, QVHighlights) 视频都是几分钟到几十分钟, 提取几百帧, combine 后仍有 10-30+ 个 timestamp. `CLIP_LENGTH=32` 是为长视频设计的, GTEA 这种短视频 TAS 不在作者的验证范围内.
+
+### 修复
+`CLIP_LENGTH=1` 或 `-1` 禁用 combine. 需要重新训练 Qwen2-VL-2B.
+
+### Root cause of the 27-point gap (58% → 85%)
+1. **Supervision mismatch**: timestamp F1 treats each retrieved interval as a point prediction. TAS F1@k is edit-distance + segmental. UniTime is not trained on segmental objectives at all.
+2. **Boundary precision**: VLM-predicted boundaries are text-decoded timestamps (float strings), inherently coarse. Dedicated models use pixel-level frame features with sub-second precision.
+3. **Context length**: our 4096 truncation issue (commit 3b56855) means model sees only first ~10 frames. With MODEL_MAX_LEN=24576 (fix pending), gap should narrow by ~10 points on its own.
+4. **No temporal smoothness loss**: UniTime has no T-MSE or boundary loss; it's purely cross-entropy on autoregressive tokens.
