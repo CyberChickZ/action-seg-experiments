@@ -51,18 +51,18 @@ VIDEO_FOLDER=/nfs/hpc/dgx2-4/data/TAS_videos/gtea
 FEAT_FOLDER=/nfs/hpc/dgx2-4/tmp/2026/4/6/feature/Qwen2-VL-2B-Instruct/gtea
 
 FPS=2
-CLIP_LENGTH=32
+CLIP_LENGTH=-1
 
 TRAIN_VISION_ENCODER=False
 USE_VISION_LORA=False
 TRAIN_VISION_PROJECTOR=False
 
-USE_LORA=False
+USE_LORA=True
 Q_LORA=False
 LORA_R=8
 LORA_ALPHA=8
 
-RUN_ID=qwen2vl_2b_gtea_fulltrain
+RUN_ID=qwen2vl_2b_gtea_run1
 
 DS_STAGE=zero2
 PER_DEVICE_BATCH_SIZE=1

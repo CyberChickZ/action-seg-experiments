@@ -38,7 +38,7 @@ VIDEO_FOLDER=/nfs/hpc/dgx2-4/data/TAS_videos/gtea
 FEAT_FOLDER=/nfs/hpc/share/zhanhaoc/MODLE/Gemma3-12B-it/features/gtea
 
 FPS=2
-CLIP_LENGTH=32
+CLIP_LENGTH=-1
 
 TRAIN_VISION_ENCODER=False
 USE_VISION_LORA=False
