@@ -1,3 +1,6 @@
 [submodule "experiments/unitime/UniTime"]
 	path = experiments/unitime/UniTime
 	url = git@github.com:CyberChickZ/UniTime.git
+[submodule "experiments/easyr1"]
+	path = experiments/easyr1
+	url = git@github.com:CyberChickZ/EasyR1.git
