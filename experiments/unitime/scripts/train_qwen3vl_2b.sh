@@ -27,7 +27,7 @@ TRAIN_DATA_PATH=/nfs/hpc/share/zhanhaoc/action-seg-experiments/experiments/uniti
 EVAL_DATA_PATH=/nfs/hpc/share/zhanhaoc/action-seg-experiments/experiments/unitime/data/gtea/annot/test.json
 IMAGE_FOLDER=None
 VIDEO_FOLDER=/nfs/hpc/dgx2-4/data/TAS_videos/gtea
-FEAT_FOLDER=None
+FEAT_FOLDER=/nfs/hpc/dgx2-4/tmp/2026/4/6/feature/Qwen3-VL-2B-Instruct/gtea
 
 FPS=2
 CLIP_LENGTH=-1

@@ -28,7 +28,7 @@ IMAGE_FOLDER=None
 # Gemma 4 pixel-values path: collator loads frames from VIDEO_FOLDER directly,
 # no pre-extracted features needed. FEAT_FOLDER is ignored (set to None).
 VIDEO_FOLDER=/nfs/hpc/dgx2-4/data/TAS_videos/gtea
-FEAT_FOLDER=None
+FEAT_FOLDER=/nfs/hpc/dgx2-4/tmp/2026/4/6/feature/Gemma4-E4B-it/gtea
 
 FPS=2
 CLIP_LENGTH=-1
