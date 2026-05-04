@@ -62,7 +62,7 @@ NUM_EPOCHS=2
 LR=2e-4
 # 32 frames × 256 image tokens = 8192, plus query/answer/prompt overhead.
 # 16384 leaves headroom; bump higher only if you increase --num_frames.
-MODEL_MAX_LEN=32768
+MODEL_MAX_LEN=16384
 
 torchrun $DISTRIBUTED_ARGS train.py \
     --model_id $MODEL_ID \
