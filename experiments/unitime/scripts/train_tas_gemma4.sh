@@ -20,6 +20,7 @@ DISTRIBUTED_ARGS="
 MODEL_LOCAL=/nfs/hpc/share/zhanhaoc/MODLE/Gemma4-E4B-it
 VIDEO_FOLDER=/nfs/hpc/dgx2-4/data/TAS_videos/gtea
 GT_FOLDER=/nfs/hpc/dgx2-4/data/gtea/groundTruth
+FEAT_FOLDER=/nfs/hpc/dgx2-4/tmp/2026/5/5/feature/Gemma4-E4B-it-15fps/gtea
 TRAIN_SPLIT=/nfs/hpc/dgx2-4/data/gtea/splits/train.split1.bundle
 TEST_SPLIT=/nfs/hpc/dgx2-4/data/gtea/splits/test.split1.bundle
 
@@ -30,6 +31,7 @@ torchrun $DISTRIBUTED_ARGS train_tas.py \
     --model_local_path $MODEL_LOCAL \
     --video_folder $VIDEO_FOLDER \
     --gt_folder $GT_FOLDER \
+    --feat_folder $FEAT_FOLDER \
     --train_split $TRAIN_SPLIT \
     --test_split $TEST_SPLIT \
     --spatial_pool_h 12 \
