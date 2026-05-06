@@ -77,7 +77,7 @@ torchrun $DISTRIBUTED_ARGS train_tas.py \
     --lr_scheduler_type cosine \
     --logging_steps 1 \
     --tf32 True \
-    --model_max_length 16384 \
+    --model_max_length 24576 \
     --gradient_checkpointing True \
     --dataloader_num_workers 1 \
     --train_vision_encoder False \
