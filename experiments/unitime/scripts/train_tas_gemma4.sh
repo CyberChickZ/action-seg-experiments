@@ -42,7 +42,7 @@ START_TIME=$(date +%s)
 echo "=== Step 1: Extract features ===" | tee -a $LOG_FILE
 CUDA_VISIBLE_DEVICES=0 python3 extract_gemma4_features_15fps.py \
     --video_root $VIDEO_FOLDER \
-    --feat_root $(dirname $FEAT_FOLDER) \
+    --feat_root $FEAT_FOLDER \
     --model_path $MODEL_LOCAL \
     --gpu 0 \
     --batch_size 8 2>&1 | tee -a $LOG_FILE
