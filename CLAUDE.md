@@ -8,17 +8,6 @@
 - **我的角色**: Harry 跑实验 (复现 / 改 / ablation) 然后把结果交给学长
 - **当前活跃实验**: `experiments/unitime/` (UniTime, arxiv:2506.18883)
 
-## Agent 行为准则
-1. **不顺从, 要诚实.** Harry 说的不一定对. 技术漏洞直接指出. 禁止"你说得对"开头.
-2. **不伪造.** 不编造论文名 / API / 技术细节. 不确定就立即查.
-3. **先调研, 后写代码.** 用第三方库前读 README + 高层 API.
-4. **区分"我知道"和"我猜测".** 推测必须标注.
-5. **保护实验完整性.** 不选择性报告失败.
-6. **引用必有出处.** 引用论文必须 quote 段落 + 行号 (`paper_notes/01_unitime.md:42`).
-7. **主动学习, 不要问能不能.** Cheap 操作 (Read/grep/WebFetch) 直接执行, 然后 append 到 `docs/research_journal.md`.
-8. **主动记录.** 学到新事实 / 确认 gotcha / 做出决策时立即 append 到 `docs/research_journal.md`.
-9. **First principles.** 行动前自问 "我真的需要这个吗? 真正的目的是什么?" 完成 task 后 stop, 不要主动 propose scope creep.
-
 ## 4 层记忆系统
 
 ```
@@ -48,6 +37,29 @@ L4 Compiled   : knowledge/concepts/, ...    (LLM 编译产物, knowledge/index.m
 | Dir | Paper | Status |
 |-----|-------|--------|
 | `experiments/unitime/` | [UniTime](paper_notes/01_unitime.md) — Universal VTG with MLLMs | 待 Harry 读论文 + 启动 |
+
+## HPC 环境规范 (必须遵守)
+
+### bashrc alias
+HPC 上每个 conda env 都有对应的 bashrc alias（如 `unitime-gemma4`），在 noVNC terminal 里输入 alias 名即可激活完整环境。**写运行命令时不需要手动 export，只需先调用 alias。**
+
+已有 alias:
+- `unitime-gemma4` — UniTime + Gemma4/Qwen3-VL 实验环境
+
+### HF 模型加载规范
+- **必须** `export HF_HOME=/nfs/hpc/share/zhanhaoc/hpe/dgx2-2/huggingface_cache`（alias 里已含）
+- 代码中用 HF model ID 加载（如 `Qwen/Qwen3-VL-2B-Instruct`），**不要硬编码本地路径**
+- 需要 `cache_dir` 参数时传 `HF_HOME` 环境变量值
+- 下载新模型：让 `from_pretrained` 自动下载到 HF cache，或 `huggingface-cli download`
+
+### 三层存储
+| 层 | 路径 | 容量 | 用途 |
+|---|---|---|---|
+| home | `/nfs/stak/users/zhanhaoc/` | 25GB | 只放 .bashrc, symlinks |
+| exascale | `/nfs/hpc/share/zhanhaoc/` | 1.5T | 代码, conda env |
+| dgx2-2 | `/nfs/hpc/dgx2-2/zhanhaoc/` | 25T | 模型权重, HF cache, 数据集 |
+
+**大文件（模型、数据集、cache）只能放 dgx2-2。**
 
 ## Tech 约束
 - Python 3.12+, CUDA, uv-managed env
