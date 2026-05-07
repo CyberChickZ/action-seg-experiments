@@ -85,7 +85,6 @@ def main():
     # Load model
     print(f"Loading {MODEL_ID}...")
     from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
-    from qwen_vl_utils import process_vision_info
 
     model = Qwen3VLForConditionalGeneration.from_pretrained(
         MODEL_ID,
@@ -159,11 +158,9 @@ def main():
         ]
 
         text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
-        image_inputs, video_inputs = process_vision_info(messages)
         inputs = processor(
             text=[text],
-            images=image_inputs,
-            videos=video_inputs,
+            images=pil_frames,
             padding=True,
             return_tensors="pt",
         ).to(model.device)
