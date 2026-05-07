@@ -141,13 +141,8 @@ def main():
         image_content = [{"type": "image", "image": img} for img in pil_frames]
 
         prompt_text = (
-            f"These are {len(pil_frames)} frames sampled at {SAMPLE_FPS}fps from a {WINDOW_SEC}-second cooking video clip.\n"
-            f"The possible actions are: {action_list_str}.\n"
-            f"List ALL action segments in this clip. For each segment, give the action name, "
-            f"approximate start time (seconds from 0), and end time.\n"
-            f"Output format: action start_time end_time (one per line).\n"
-            f"Example:\ntake 0.0 2.0\nopen 2.0 4.5\n"
-            f"If no action is visible, output: none"
+            f"These are {len(pil_frames)} consecutive frames from a {WINDOW_SEC}-second cooking video.\n"
+            f"How many distinct actions do you see? Briefly describe each action."
         )
 
         messages = [
