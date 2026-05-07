@@ -140,10 +140,7 @@ def main():
         # Build prompt with inline images
         image_content = [{"type": "image", "image": img} for img in pil_frames]
 
-        prompt_text = (
-            f"These are {len(pil_frames)} consecutive frames from a {WINDOW_SEC}-second cooking video.\n"
-            f"How many distinct actions do you see? Briefly describe each action."
-        )
+        prompt_text = "Watch these frames from a cooking video. How many distinct actions do you see?"
 
         messages = [
             {
