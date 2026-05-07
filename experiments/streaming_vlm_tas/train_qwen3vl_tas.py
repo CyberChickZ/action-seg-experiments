@@ -31,7 +31,7 @@ NUM_EPOCHS = 50
 LR = 2e-4
 LORA_R = 8
 LORA_ALPHA = 16
-BATCH_SIZE = 4
+BATCH_SIZE = 8
 QUERY = "What actions are in this video? List each action with its start and end time."
 
 
